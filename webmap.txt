@@ -46,6 +46,9 @@ Bilder
 Dokument
 (Möjligtvis en sida med RSS feed från riksförbundet och distriktsförbundet)
 
-Tankar om nya features: 
-Det vore kul om man hade en youtube-video med en random teknik som slumpas fram varje vecka som man kan träna på den veckan
+Klubbinfo & Historik kan slås ihop under "Om klubben"
+Tränare & Styrelse skulle kunna slås ihop under "Ledning"
+Träningstider är i princip bara 1 mening, så den skulle kunna ligga på startsidan eller något
 
+Tankar om nya features:
+Det vore kul om man hade en youtube-video med en random teknik som slumpas fram varje vecka som man kan träna på den veckan
