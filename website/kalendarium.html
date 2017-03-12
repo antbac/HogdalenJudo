@@ -21,13 +21,12 @@
   <div class='container'>
     <div id="header">
       <div class="container clearfix">
-        <div class="two columns alpha">
+        <div class="three columns alpha">
           <a href="/" id="logo"><img src="logo.jpg" style="height: 48px;" title="Högdalens JK logo" alt="Högdalens JK"></a>
         </div>
-        <div class="ten columns omega aligncenter">
+        <div class="nine columns omega aligncenter">
           <ul id="nav" class="aligncenter">
-            <li><a href="omklubben.html">Om klubben</a></li>
-            <li><a href="traningsavgift.html">Träningsavgift</a></li>
+            <li><a href="tiderochkostnad.html">Tider och kostnad</a></li>
             <li><a href="kalendarium.html" style="border-bottom: 1px solid LightGray;">Kalendarium</a></li>
             <li><a href="arkiv.html">Arkiv</a></li>
             <li><a href="ledning.html">Ledning</a></li>
@@ -40,11 +39,40 @@
 
     <!-- Here is the main content -->
     <div class="mainText">
-      <h1>Article 1</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h1>Klubbmästerskap</h1>
+      <p>
+        Torsdagen den 6 April kommer vi ha KM i klubben.
+        Tävlingen kommer ta den ordinarie träningstidens plats den dagen.
+        Priser kommer delas ut till de som placerar sig bäst i varje viktgrupp.
+      </p>
+      <p>
+        Att delta i tävlingen är helt frivilligt, ingen behöver vara med ifall de inte vill.
+        Vill man inte delta är man  ändå varmt välkommen att komma förbi och heja på sina kamrater.
+      </p>
+      <p>
+        Klubbmästerskapet är dessutom ett perfekt tillfälle att testa teknnikerna man lärt sig under träningarna i en mer verklig miljö.
+        Det är även ett ypperligt tillfälle för föräldrarna att komma förbi och se hur duktiga ni är.
+      </p>
 
-      <h1>Article 2</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h1>Påsklov</h1>
+      <p>
+        Under påsklovet vecka 15 (10 - 16 April) kommer det inte vara någon träning, men ni kan ändå träna på era tekniker hemma.
+        Kom bara ihåg att vara försiktiga med föräldrarna, de är inte lika bra på judo som ni är.
+      </p>
+      <p>
+        Teknikerna som ni behöver kunna vid slutet av terminen hittar ni <a href="http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/dokument/simplifierad_gradering.pdf">här</a>.
+        Läs vilka tekniker som behövs   för att ta nästa bälte och kolla upp de på <a href="https://www.youtube.com/">YouTube</a> ifall ni inte har koll på hur de ser ut.
+      </p>
+
+      <h1>Graderingar</h1>
+      <p>
+        Två träningar innan terminsavslutningen kommer vi ha graderingar där de tränande visar upp vad de lärt sig under terminen i hopp om att fåå gå upp till nästa bälte.
+      </p>
+
+      <h1>Terminsavslutning</h1>
+      <p>
+        Terminen kommer ta slut någon gång runt början av Juni.
+      </p>
     </div>
 
   </div>
@@ -53,7 +81,7 @@
   <footer class="footer-distributed" style="padding-top: 1em; padding-bottom: 1em;">
     <div class="footer-right">
       <a href="https://www.facebook.com/hogdalensjudo"><i class="fa fa-facebook"></i></a>
-      <a onclick="document.getElementById('loginModalID').style.display='block'"><i class="fa fa-lock"></i></a>
+      <a href="idrottonline.html"><i class="fa fa-pencil"></i></a>
     </div>
     <div class="footer-left">
       <p style="line-height: 16px;">E-post: <a href="mailto:tony@slgint.com" target="_top">tony@slgint.com</a></p>
@@ -62,42 +90,5 @@
       <p style="line-height: 16px;">Organisationsnummer: 802407-3804</p>
     </div>
   </footer>
-
-  <!-- Login-modal for administration -->
-  <div id="loginModalID" class="modal">
-    <form class="modal-content animate" action="/action_page.php">
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('loginModalID').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <h2>Logga in i IdrottOnline</h2>
-      </div>
-
-      <div class="modalContainer">
-        <label><b>Användarnamn</b></label>
-        <input type="text" placeholder="Användarnamn" name="useruname" required>
-
-        <label><b>Lösenord</b></label>
-        <input type="password" placeholder="Lösenord" name="psw" required>
-
-        <button type="submit">Logga in</button>
-      </div>
-
-      <div class="modalContainer" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('loginModalID').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="psw"><a href="http://idrottonline.se/Inloggningsproblem/">Inloggningsproblem?</a> Glömt <a href="#">lösenordet?</a></span>
-      </div>
-    </form>
-  </div>
-
-  <script>
-  // Get the modal
-  var modal = document.getElementById('loginModalID');
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-  </script>
 </body>
 </html>
