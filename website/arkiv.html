@@ -13,30 +13,23 @@
   <meta property='og:type' content='website' />
 
   <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel='stylesheet' href='css/style.css'>
 
   <script src='js/ism-2.2.min.js'></script>
 
   <style>
-  div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-  }
-
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-
   div.desc {
     padding: 15px;
     text-align: center;
+  }
+
+  img.preview {
+    width: 100%;
+  }
+
+  div.preview:hover {
+    color: black;
   }
   </style>
 
@@ -65,305 +58,305 @@
     <div class='mainText'>
       <h1>Dokument</h1>
       <p>
-        <div class='four columns' style='text-align: center;'><a href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/dokument/kyu-graderingsbestammelser20201120a4201.pdf'><img src='images/pdf_icon.png' style='width: 100px;'><p>Graderingsbestämmelser</p></a></div>
-        <div class='four columns' style='text-align: center;'><a href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/dokument/simplifierad_gradering.pdf'><img src='images/pdf_icon.png' style='width: 100px;'><p>Förenklade graderingsbestämmelser</p></a></div>
-        <div class='four columns' style='text-align: center;'><a href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/dokument/tekniker.pdf'><img src='images/pdf_icon.png' style='width: 100px;'><p>Tekniker</p></a></div>
+        <div class='col-md-4' style='text-align: center;'><a href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/dokument/kyu-graderingsbestammelser20201120a4201.pdf'><img src='images/pdf_icon.png' style='width: 100px;'><p>Graderingsbestämmelser</p></a></div>
+        <div class='col-md-4' style='text-align: center;'><a href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/dokument/simplifierad_gradering.pdf'><img src='images/pdf_icon.png' style='width: 100px;'><p>Förenklade graderingsbestämmelser</p></a></div>
+        <div class='col-md-4' style='text-align: center;'><a href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/dokument/tekniker.pdf'><img src='images/pdf_icon.png' style='width: 100px;'><p>Tekniker</p></a></div>
       </p>
 
       <h1>Bilder</h1>
-      <div class='twelve columns'> <!-- Row 1 -->
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4839.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4839.jpg' height='200'>
-          </a>
-          <div class='desc'>En Sumi-gaeshi av Fredrik</div>
-        </div>
+      <div class='row'> <!-- Row 1 -->
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4839.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4839.jpg' class='preview'>
+            <div class='desc'>En Sumi-gaeshi av Fredrik</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4962.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4962.jpg' height='200'>
-          </a>
-          <div class='desc'>En Morote-gari av Fredrik</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4962.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4962.jpg' class='preview'>
+            <div class='desc'>En Morote-gari av Fredrik</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4908.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4908.jpg' height='200'>
-          </a>
-          <div class='desc'>En Kata-guruma av Markus</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4908.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4908.jpg' class='preview'>
+            <div class='desc'>En Kata-guruma av Markus</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4939.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4939.jpg' height='200'>
-          </a>
-          <div class='desc'>Max kastar Anton</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4939.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4939.jpg' class='preview'>
+            <div class='desc'>Max kastar Anton</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4942.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4942.jpg' height='200'>
-          </a>
-          <div class='desc'>En Uchi-mata av Anton</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4942.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4942.jpg' class='preview'>
+            <div class='desc'>En Uchi-mata av Anton</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4946.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4946.jpg' height='200'>
-          </a>
-          <div class='desc'>En Uchi-mata av Anton</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4946.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4946.jpg' class='preview'>
+            <div class='desc'>En Uchi-mata av Anton</div>
+          </div>
+        </a>
       </div>
-      <div class='twelve columns'> <!-- Row 2 -->
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4997.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4997.jpg' height='200'>
-          </a>
-          <div class='desc'>En O-goshi av Max</div>
-        </div>
+      <div class='row'> <!-- Row 2 -->
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4997.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4997.jpg' class='preview'>
+            <div class='desc'>En O-goshi av Max</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_5002.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_5002.jpg' height='200'>
-          </a>
-          <div class='desc'>En O-goshi av Max</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_5002.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_5002.jpg' class='preview'>
+            <div class='desc'>En O-goshi av Max</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_5023.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_5023.jpg' height='200'>
-          </a>
-          <div class='desc'>En O-uchi-gari av Fredrik</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_5023.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_5023.jpg' class='preview'>
+            <div class='desc'>En O-uchi-gari av Fredrik</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/judo2013_005.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/judo2013_005.jpg' height='200'>
-          </a>
-          <div class='desc'>En Ippon-seoi-nage av Jon</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/judo2013_005.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/judo2013_005.jpg' class='preview'>
+            <div class='desc'>En Ippon-seoi-nage av Jon</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/janne-far-stryk.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/janne-far-stryk.jpg' height='200'>
-          </a>
-          <div class='desc'>Janne får stryk</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/janne-far-stryk.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/janne-far-stryk.jpg' class='preview'>
+            <div class='desc'>Janne får stryk</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4891.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4891.jpg' height='200'>
-          </a>
-          <div class='desc'>En Ura-nage av Fredrik</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4891.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/dsc_4891.jpg' class='preview'>
+            <div class='desc'>En Ura-nage av Fredrik</div>
+          </div>
+        </a>
       </div>
-      <div class='twelve columns'> <!-- Row 3 -->
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2034.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2034.jpg' height='200'>
-          </a>
-          <div class='desc'>Uppvisning under HAIS innebandycup</div>
-        </div>
+      <div class='row'> <!-- Row 3 -->
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2034.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2034.jpg' class='preview'>
+            <div class='desc'>Uppvisning under HAIS innebandycup</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2014.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2014.jpg' height='200'>
-          </a>
-          <div class='desc'>Uppvisning under HAIS innebandycup</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2014.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2014.jpg' class='preview'>
+            <div class='desc'>Uppvisning under HAIS innebandycup</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2037.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2037.jpg' height='200'>
-          </a>
-          <div class='desc'>Uppvisning under HAIS innebandycup</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2037.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2037.jpg' class='preview'>
+            <div class='desc'>Uppvisning under HAIS innebandycup</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2041.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2041.jpg' height='200'>
-          </a>
-          <div class='desc'>Uppvisning under HAIS innebandycup</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2041.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2041.jpg' class='preview'>
+            <div class='desc'>Uppvisning under HAIS innebandycup</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2053.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2053.jpg' height='200'>
-          </a>
-          <div class='desc'>Uppvisning under HAIS innebandycup</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2053.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2053.jpg' class='preview'>
+            <div class='desc'>Uppvisning under HAIS innebandycup</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2058.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2058.jpg' height='200'>
-          </a>
-          <div class='desc'>Uppvisning under HAIS innebandycup</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2058.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2058.jpg' class='preview'>
+            <div class='desc'>Uppvisning under HAIS innebandycup</div>
+          </div>
+        </a>
       </div>
-      <div class='twelve columns'> <!-- Row 4 -->
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2076.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2076.jpg' height='200'>
-          </a>
-          <div class='desc'>Uppvisning under HAIS innebandycup</div>
-        </div>
+      <div class='row'> <!-- Row 4 -->
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2076.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2076.jpg' class='preview'>
+            <div class='desc'>Uppvisning under HAIS innebandycup</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_1996.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_1996.jpg' height='200'>
-          </a>
-          <div class='desc'>Uppvisning under HAIS innebandycup</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_1996.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_1996.jpg' class='preview'>
+            <div class='desc'>Uppvisning under HAIS innebandycup</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2001.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2001.jpg' height='200'>
-          </a>
-          <div class='desc'>Uppvisning under HAIS innebandycup</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2001.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2001.jpg' class='preview'>
+            <div class='desc'>Uppvisning under HAIS innebandycup</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2258.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2258.jpg' height='200'>
-          </a>
-          <div class='desc'>Uppvisning under terminsavslutning</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2258.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2258.jpg' class='preview'>
+            <div class='desc'>Uppvisning under terminsavslutning</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2264.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2264.jpg' height='200'>
-          </a>
-          <div class='desc'>Uppvisning under terminsavslutning</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2264.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/IMG_2264.jpg' class='preview'>
+            <div class='desc'>Uppvisning under terminsavslutning</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/janne-far-stryk2.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/janne-far-stryk2.jpg' height='200'>
-          </a>
-          <div class='desc'>Janne får stryk</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/janne-far-stryk2.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/janne-far-stryk2.jpg' class='preview'>
+            <div class='desc'>Janne får stryk</div>
+          </div>
+        </a>
       </div>
-      <div class='twelve columns'> <!-- Row 5 -->
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2297.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2297.jpg' height='200'>
-          </a>
-          <div class='desc'>Jerry lurar Peter på en Ippon</div>
-        </div>
+      <div class='row'> <!-- Row 5 -->
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2297.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2297.jpg' class='preview'>
+            <div class='desc'>Jerry lurar Peter på en Ippon</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/judo2013_015.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/judo2013_015.jpg' height='200'>
-          </a>
-          <div class='desc'>judo2013_015</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/judo2013_015.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/judo2013_015.jpg' class='preview'>
+            <div class='desc'>judo2013_015</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2534.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2534.jpg' height='200'>
-          </a>
-          <div class='desc'>Judoträning HT 2010</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2534.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2534.jpg' class='preview'>
+            <div class='desc'>Judoträning HT 2010</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2545.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2545.jpg' height='200'>
-          </a>
-          <div class='desc'>Judoträning HT 2010</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2545.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2545.jpg' class='preview'>
+            <div class='desc'>Judoträning HT 2010</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2542.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2542.jpg' height='200'>
-          </a>
-          <div class='desc'>Judoträning HT 2010</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2542.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2542.jpg' class='preview'>
+            <div class='desc'>Judoträning HT 2010</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2532.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2532.jpg' height='200'>
-          </a>
-          <div class='desc'>Judoträning HT 2010</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2532.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2532.jpg' class='preview'>
+            <div class='desc'>Judoträning HT 2010</div>
+          </div>
+        </a>
       </div>
-      <div class='twelve columns'> <!-- Row 6 -->
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2521.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2521.jpg' height='200'>
-          </a>
-          <div class='desc'>Judoträning HT 2010</div>
-        </div>
+      <div class='row'> <!-- Row 6 -->
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2521.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2521.jpg' class='preview'>
+            <div class='desc'>Judoträning HT 2010</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2529.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2529.jpg' height='200'>
-          </a>
-          <div class='desc'>Judoträning HT 2010</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2529.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2529.jpg' class='preview'>
+            <div class='desc'>Judoträning HT 2010</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2501.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2501.jpg' height='200'>
-          </a>
-          <div class='desc'>Judoträning HT 2010</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2501.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2501.jpg' class='preview'>
+            <div class='desc'>Judoträning HT 2010</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2514.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2514.jpg' height='200'>
-          </a>
-          <div class='desc'>Judoträning HT 2010</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2514.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2514.jpg' class='preview'>
+            <div class='desc'>Judoträning HT 2010</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/p1220062.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/p1220062.jpg' height='200'>
-          </a>
-          <div class='desc'>KM 2008</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/p1220062.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/p1220062.jpg' class='preview'>
+            <div class='desc'>KM 2008</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/p1220055.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/p1220055.jpg' height='200'>
-          </a>
-          <div class='desc'>KM, Ne-waza</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/p1220055.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/p1220055.jpg' class='preview'>
+            <div class='desc'>KM, Ne-waza</div>
+          </div>
+        </a>
       </div>
-      <div class='twelve columns'> <!-- Row 7 -->
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2268.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2268.jpg' height='200'>
-          </a>
-          <div class='desc'>Max och pappa Tony</div>
-        </div>
+      <div class='row'> <!-- Row 7 -->
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2268.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2268.jpg' class='preview'>
+            <div class='desc'>Max och pappa Tony</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/pa140027.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/pa140027.jpg' height='200'>
-          </a>
-          <div class='desc'>Några av klubbens medlemmar</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2307.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2307.jpg' class='preview'>
+            <div class='desc'>Peter och Jerry roar sig</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2248.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2248.jpg' height='200'>
-          </a>
-          <div class='desc'>Några klubbmedlemmar VT 2010</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2248.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2248.jpg' class='preview'>
+            <div class='desc'>Några klubbmedlemmar VT 2010</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2307.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/img_2307.jpg' height='200'>
-          </a>
-          <div class='desc'>Peter och Jerry roar sig</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/pa140027.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/pa140027.jpg' class='preview'>
+            <div class='desc'>Några av klubbens medlemmar</div>
+          </div>
+        </a>
 
-        <div class='gallery two columns'>
-          <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/p1270086.jpg'>
-            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/p1270086.jpg' height='200'>
-          </a>
-          <div class='desc'>Sanna, Sara, Katarina. Årets bärare av klubbens vandringspris.</div>
-        </div>
+        <a target='_blank' href='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/p1270086.jpg'>
+          <div class='col-md-4 col-lg-2 preview'>
+            <img src='http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/p1270086.jpg' class='preview'>
+            <div class='desc'>Sanna, Sara, Katarina. Årets bärare av klubbens vandringspris.</div>
+          </div>
+        </a>
       </div>
     </div> <!-- Close main-text -->
   </div> <!-- Close main-body -->
