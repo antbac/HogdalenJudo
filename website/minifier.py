@@ -37,12 +37,6 @@ def minifier(html):
         post = html[html.find("/script>") + 8:]
         html = pre + post
 
-    # Remove all CSS files (not inline CSS)
-    while html.find("<link rel='stylesheet'") != -1:
-        pre = html[:html.find("<link rel='stylesheet'"):]
-        html = html[html.find("<link rel='stylesheet'") + 22:]
-        post = html[html.find("/>") + 2:]
-        html = pre + post
     return html
 
 
