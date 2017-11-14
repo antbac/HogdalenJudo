@@ -50,11 +50,11 @@ def replaceLinks(html):
 
 
 for inFile in glob.glob("*.html"):
-    with open(inFile) as f:
+    with open(inFile, 'r', encoding='utf-8') as f:
         content = f.readlines()
     html = ""
     for line in content:
         html += line.strip()
     outFile = open("minified/" + inFile, "w", encoding='utf-8')
-    outFile.write(replaceLinks(minifier(html))[len("<!DOCTYPE html><html>"):-len("</html>")])
+    outFile.write(replaceLinks(minifier(html))[len("<!DOCTYPE html><html>"):-len("</html>")] + "\n")
     outFile.close()
