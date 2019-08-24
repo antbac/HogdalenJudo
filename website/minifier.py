@@ -1,60 +1,50 @@
-import glob, re
-
-def removeComment(html):
-    depth = 1
-    while depth > 0:
-        start = html.find("<!--")
-        end = html.find("-->")
-        # Both start and end can not be -1 in syntactically correct code
-        if start < end and start != -1:
-            html = html[start + 4:]
-            depth += 1
-        else:
-            html = html[end + 3:]
-            depth -= 1
-    return html
+import glob
+import re
 
 
-def minifier(html):
-    # Double spaces are removed
-    while True:
-        tmp = html + " "
-        html = re.sub(r'\s\s', r' ', html)
-        if html == tmp[:-1]:
-            break
+def removeComments(html):
+    return re.sub("(<!--.*?-->)", "", html, flags=re.DOTALL)
 
-    # Remove all comments
-    tmp = ""
-    while html.find("<!--") != -1:
-        tmp += html[:html.find("<!--")]
-        html = removeComment(html[html.find("<!--") + 4:])
-    html = tmp + html
 
-    # Remove all javascripts
-    while html.find("<script") != -1:
-        pre = html[:html.find("<script"):]
-        html = html[html.find("<script") + 7:]
-        post = html[html.find("/script>") + 8:]
-        html = pre + post
+def extractHeadAndBody(html):
+    start = html.find("<head>")
+    end = html.find("</body>") + len("</body>")
+    return html[start:end]
 
-    return html
+
+def removeScripts(html):
+    return re.sub("(<script.*?</script>)", "", html, flags=re.DOTALL)
 
 
 def replaceLinks(html):
-    html = re.sub(r'Index.html', r'http://idrottonline.se/HogdalensJK-Judo', html)
-    html = re.sub(r'Information.html', r'http://idrottonline.se/HogdalensJK-Judo/Information', html)
-    html = re.sub(r'Kalendarium.html', r'http://idrottonline.se/HogdalensJK-Judo/Kalendarium', html)
-    html = re.sub(r'Arkiv.html', r'http://idrottonline.se/HogdalensJK-Judo/Arkiv', html)
-    html = re.sub(r'Ledning.html', r'http://idrottonline.se/HogdalensJK-Judo/Ledning', html)
+    html = re.sub(
+        r'Index.html', r'http://idrottonline.se/HogdalensJK-Judo', html)
+    html = re.sub(r'Information.html',
+                  r'http://idrottonline.se/HogdalensJK-Judo/Information', html)
+    html = re.sub(r'Kalendarium.html',
+                  r'http://idrottonline.se/HogdalensJK-Judo/Kalendarium', html)
+    html = re.sub(
+        r'Arkiv.html', r'http://idrottonline.se/HogdalensJK-Judo/Arkiv', html)
+    html = re.sub(r'Ledning.html',
+                  r'http://idrottonline.se/HogdalensJK-Judo/Ledning', html)
     return re.sub(r'./images/', r'http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/', html)
 
 
-for inFile in glob.glob("*.html"):
-    with open(inFile, 'r', encoding='utf-8') as f:
-        content = f.readlines()
-    html = ""
-    for line in content:
-        html += line.strip()
-    outFile = open("minified/" + inFile, "w", encoding='utf-8')
-    outFile.write(replaceLinks(minifier(html))[len("<!DOCTYPE html><html>"):-len("</html>")] + "\n")
-    outFile.close()
+if __name__ == "__main__":
+    for inFile in glob.glob("*.html"):
+        with open(inFile, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        content = content.strip()
+        content = removeComments(content)
+        content = removeScripts(content)
+        content = replaceLinks(content)
+        content = extractHeadAndBody(content)
+        content = re.sub(r"\s+", " ", content)
+        content = re.sub("> <", "><", content)
+        content = re.sub("\"", "'", content)
+
+        outFile = open(
+            "minified/" + inFile[:-5] + ".min.html", "w", encoding='utf-8')
+        outFile.write(content)
+        outFile.close()
