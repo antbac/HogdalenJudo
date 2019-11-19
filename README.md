@@ -1,2 +1,2 @@
 # Högdalen Judo
-The web pages displayed at http://idrottonline.se/HogdalensJK-Judo
+The web pages displayed at https://idrottonline.se/HogdalensJK-Judo

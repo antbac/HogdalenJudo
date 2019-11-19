@@ -18,16 +18,16 @@ def removeScripts(html):
 
 def replaceLinks(html):
     html = re.sub(
-        r'Index.html', r'http://idrottonline.se/HogdalensJK-Judo', html)
+        r'Index.html', r'https://idrottonline.se/HogdalensJK-Judo', html)
     html = re.sub(r'Information.html',
-                  r'http://idrottonline.se/HogdalensJK-Judo/Information', html)
+                  r'https://idrottonline.se/HogdalensJK-Judo/Information', html)
     html = re.sub(r'Kalendarium.html',
-                  r'http://idrottonline.se/HogdalensJK-Judo/Kalendarium', html)
+                  r'https://idrottonline.se/HogdalensJK-Judo/Kalendarium', html)
     html = re.sub(
-        r'Arkiv.html', r'http://idrottonline.se/HogdalensJK-Judo/Arkiv', html)
+        r'Arkiv.html', r'https://idrottonline.se/HogdalensJK-Judo/Arkiv', html)
     html = re.sub(r'Ledning.html',
-                  r'http://idrottonline.se/HogdalensJK-Judo/Ledning', html)
-    return re.sub(r'./images/', r'http://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/', html)
+                  r'https://idrottonline.se/HogdalensJK-Judo/Ledning', html)
+    return re.sub(r'./images/', r'https://idrottonline.se/HogdalensJK-Judo/globalassets/hogdalens-jk---judo/bilder/', html)
 
 
 if __name__ == "__main__":
